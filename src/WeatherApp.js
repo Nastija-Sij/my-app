@@ -21,16 +21,23 @@ export default function WeatherSearch() {
   return (
     <div className="div-form">
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" onChange={updateCity} />
-        <input type="submit" value="Search" />
+        <input
+          className="search-bar"
+          type="search"
+          placeholder="Enter a city"
+          onChange={updateCity}
+        />
+        <input className="search-btn" type="submit" value="Search" />
       </form>
 
       {weatherData && (
         <ul>
-          <li>Temperature: {Math.round(weatherData.temperature)}°C </li>
-          <li>Humidity: {weatherData.humidity}%</li>
-          <li>Wind: {Math.round(weatherData.wind)} km/h</li>
-          <li>
+          <li className="list">
+            Temperature: {Math.round(weatherData.temperature)}°C{" "}
+          </li>
+          <li className="list">Humidity: {weatherData.humidity}%</li>
+          <li className="list">Wind: {Math.round(weatherData.wind)} km/h</li>
+          <li className="list">
             <img
               src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
               alt="Weather icon"
