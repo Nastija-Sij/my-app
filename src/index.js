@@ -13,7 +13,15 @@ root.render(
     <App />
     <WeatherApp />
     <p className="footer">
-      <a href="https://github.com/Nastija-Sij/my-app">Open-source code</a>, by <a href="https://github.com/Nastija-Sij"> Nastija Sij</a>.
+      <a href="https://github.com/Nastija-Sij/my-app" target="_blank">
+        Open-source code
+      </a>
+      , by{" "}
+      <a href="https://github.com/Nastija-Sij" target="_blank">
+        {" "}
+        Nastija Sij
+      </a>
+      .
     </p>
   </React.StrictMode>
 );
