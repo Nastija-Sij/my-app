@@ -12,6 +12,9 @@ root.render(
   <React.StrictMode>
     <App />
     <WeatherApp />
+    <p className="footer">
+      <a href="https://github.com/Nastija-Sij/my-app">Open-source code</a>, by <a href="https://github.com/Nastija-Sij"> Nastija Sij</a>.
+    </p>
   </React.StrictMode>
 );
 
